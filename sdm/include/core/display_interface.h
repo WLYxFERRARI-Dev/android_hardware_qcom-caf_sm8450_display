@@ -78,6 +78,10 @@
 #include "layer_stack.h"
 #include "sdm_types.h"
 
+#ifndef FOD_PRESSED_LAYER_ZORDER
+#define FOD_PRESSED_LAYER_ZORDER 0x20000000u
+#endif
+
 namespace sdm {
 
 typedef std::vector<std::pair<std::string, std::string>> AttrVal;
